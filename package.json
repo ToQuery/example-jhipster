@@ -133,7 +133,7 @@
     "json-loader": "0.5.7",
     "lint-staged": "15.2.0",
     "merge-jsons-webpack-plugin": "2.0.1",
-    "mini-css-extract-plugin": "2.7.6",
+    "mini-css-extract-plugin": "2.8.0",
     "postcss-loader": "7.3.3",
     "prettier": "3.1.0",
     "prettier-plugin-java": "2.5.0",
