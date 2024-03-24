@@ -18,8 +18,8 @@ dependencies:
     specifier: 1.9.7
     version: 1.9.7(react-redux@8.1.3)(react@18.2.0)
   axios:
-    specifier: 1.6.2
-    version: 1.6.2(debug@4.3.4)
+    specifier: 1.6.3
+    version: 1.6.3
   bootstrap:
     specifier: 5.3.2
     version: 5.3.2(@popperjs/core@2.11.8)
@@ -43,7 +43,7 @@ dependencies:
     version: 7.49.0(react@18.2.0)
   react-jhipster:
     specifier: 0.25.3
-    version: 0.25.3(@popperjs/core@2.11.8)(axios@1.6.2)(dayjs@1.11.10)(react-dom@18.2.0)(react-hook-form@7.49.0)(react@18.2.0)(reactstrap@9.2.1)
+    version: 0.25.3(@popperjs/core@2.11.8)(axios@1.6.3)(dayjs@1.11.10)(react-dom@18.2.0)(react-hook-form@7.49.0)(react@18.2.0)(reactstrap@9.2.1)
   react-loadable:
     specifier: 5.5.0
     version: 5.5.0(react@18.2.0)
@@ -117,7 +117,7 @@ devDependencies:
     version: 6.13.2(eslint@8.55.0)(typescript@5.3.3)
   autoprefixer:
     specifier: 10.4.16
-    version: 10.4.16(postcss@8.4.35)
+    version: 10.4.16(postcss@8.4.38)
   browser-sync:
     specifier: 2.29.3
     version: 2.29.3
@@ -198,7 +198,7 @@ devDependencies:
     version: 2.7.6(webpack@5.89.0)
   postcss-loader:
     specifier: 7.3.3
-    version: 7.3.3(postcss@8.4.35)(typescript@5.3.3)(webpack@5.89.0)
+    version: 7.3.3(postcss@8.4.38)(typescript@5.3.3)(webpack@5.89.0)
   prettier:
     specifier: 3.1.0
     version: 3.1.0
@@ -3704,7 +3704,7 @@ packages:
       when-exit: 2.1.2
     dev: true
 
-  /autoprefixer@10.4.16(postcss@8.4.35):
+  /autoprefixer@10.4.16(postcss@8.4.38):
     resolution: {integrity: sha512-7vd3UC6xKp0HLfua5IjZlcXvGAGy7cBAXTg2lyQ/8WpNhd6SiZ8Be+xm3FyBSYJx5GKcpRCzBh7RH4/0dnY+uQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
@@ -3716,7 +3716,7 @@ packages:
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.35
+      postcss: 8.4.38
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -3738,7 +3738,7 @@ packages:
   /axios@0.21.4(debug@4.3.2):
     resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
     dependencies:
-      follow-redirects: 1.15.5(debug@4.3.2)
+      follow-redirects: 1.15.6(debug@4.3.2)
     transitivePeerDependencies:
       - debug
     dev: true
@@ -3746,7 +3746,17 @@ packages:
   /axios@1.6.2(debug@4.3.4):
     resolution: {integrity: sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==}
     dependencies:
-      follow-redirects: 1.15.5(debug@4.3.4)
+      follow-redirects: 1.15.6(debug@4.3.4)
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
+  /axios@1.6.3:
+    resolution: {integrity: sha512-fWyNdeawGam70jXSVlKl+SUNVcL6j6W79CuSIPfi6HnDUmSCH6gyUys/HrqHeA/wU0Az41rRgean494d0Jb+ww==}
+    dependencies:
+      follow-redirects: 1.15.6(debug@4.3.4)
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -3864,8 +3874,8 @@ packages:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: true
 
-  /bare-events@2.2.0:
-    resolution: {integrity: sha512-Yyyqff4PIFfSuthCZqLlPISTWHmnQxoPuAvkmgzsJEmG3CesdIv6Xweayl0JkCZJSB2yYIdJyEz97tpxNhgjbg==}
+  /bare-events@2.2.2:
+    resolution: {integrity: sha512-h7z00dWdG0PYOQEvChhOSWvOfkIKsdZGkWr083FgN/HyoQuebSew/cgirYqh9SCuy/hRvxc5Vy6Fw8xAmYHLkQ==}
     requiresBuild: true
     dev: true
     optional: true
@@ -4871,7 +4881,7 @@ packages:
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
     dependencies:
       mdn-data: 2.0.28
-      source-map-js: 1.0.2
+      source-map-js: 1.2.0
     dev: true
 
   /css-tree@2.3.1:
@@ -4879,7 +4889,7 @@ packages:
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
     dependencies:
       mdn-data: 2.0.30
-      source-map-js: 1.0.2
+      source-map-js: 1.2.0
     dev: true
 
   /css-what@6.1.0:
@@ -6385,8 +6395,8 @@ packages:
       - supports-color
     dev: true
 
-  /follow-redirects@1.15.5(debug@4.3.2):
-    resolution: {integrity: sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==}
+  /follow-redirects@1.15.6(debug@4.3.2):
+    resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -6397,8 +6407,8 @@ packages:
       debug: 4.3.2
     dev: true
 
-  /follow-redirects@1.15.5(debug@4.3.4):
-    resolution: {integrity: sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==}
+  /follow-redirects@1.15.6(debug@4.3.4):
+    resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -7139,7 +7149,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.15.5(debug@4.3.4)
+      follow-redirects: 1.15.6(debug@4.3.4)
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -10110,7 +10120,7 @@ packages:
       postcss: 8.4.35
     dev: true
 
-  /postcss-loader@7.3.3(postcss@8.4.35)(typescript@5.3.3)(webpack@5.89.0):
+  /postcss-loader@7.3.3(postcss@8.4.38)(typescript@5.3.3)(webpack@5.89.0):
     resolution: {integrity: sha512-YgO/yhtevGO/vJePCQmTxiaEwER94LABZN0ZMT4A0vsak9TpO+RvKRs7EmJ8peIlB9xfXCsS7M8LjqncsUZ5HA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -10119,7 +10129,7 @@ packages:
     dependencies:
       cosmiconfig: 8.3.6(typescript@5.3.3)
       jiti: 1.21.0
-      postcss: 8.4.35
+      postcss: 8.4.38
       semver: 7.6.0
       webpack: 5.89.0(webpack-cli@5.1.4)
     transitivePeerDependencies:
@@ -10396,7 +10406,16 @@ packages:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.0
-      source-map-js: 1.0.2
+      source-map-js: 1.2.0
+    dev: true
+
+  /postcss@8.4.38:
+    resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.0
+      source-map-js: 1.2.0
 
   /prelude-ls@1.1.2:
     resolution: {integrity: sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==}
@@ -10698,7 +10717,7 @@ packages:
   /react-is@18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
 
-  /react-jhipster@0.25.3(@popperjs/core@2.11.8)(axios@1.6.2)(dayjs@1.11.10)(react-dom@18.2.0)(react-hook-form@7.49.0)(react@18.2.0)(reactstrap@9.2.1):
+  /react-jhipster@0.25.3(@popperjs/core@2.11.8)(axios@1.6.3)(dayjs@1.11.10)(react-dom@18.2.0)(react-hook-form@7.49.0)(react@18.2.0)(reactstrap@9.2.1):
     resolution: {integrity: sha512-bNW+oNUjHbcPhBVuOLkdlvVZE2BTdhzvFKn4GN2EttmcWIzKfeOtIKy8DBBHSt0cIGuwYIyyFiI47va39t6NoQ==}
     engines: {node: '>=18.13.0'}
     peerDependencies:
@@ -10712,7 +10731,7 @@ packages:
       reactstrap:
         optional: true
     dependencies:
-      axios: 1.6.2(debug@4.3.4)
+      axios: 1.6.3
       dayjs: 1.11.10
       lodash: 4.17.21
       numeral: 2.0.6
@@ -10722,7 +10741,7 @@ packages:
       react-popper: 2.3.0(@popperjs/core@2.11.8)(react-dom@18.2.0)(react@18.2.0)
       react-transition-group: 4.4.5(react-dom@18.2.0)(react@18.2.0)
       reactstrap: 9.2.1(react-dom@18.2.0)(react@18.2.0)
-      sanitize-html: 2.11.0
+      sanitize-html: 2.13.0
       tslib: 2.6.2
     transitivePeerDependencies:
       - '@popperjs/core'
@@ -11357,15 +11376,15 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sanitize-html@2.11.0:
-    resolution: {integrity: sha512-BG68EDHRaGKqlsNjJ2xUB7gpInPA8gVx/mvjO743hZaeMCZ2DwzW7xvsqZ+KNU4QKwj86HJ3uu2liISf2qBBUA==}
+  /sanitize-html@2.13.0:
+    resolution: {integrity: sha512-Xff91Z+4Mz5QiNSLdLWwjgBDm5b1RU6xBT0+12rapjiaR7SwfRdjw8f+6Rir2MXKLrDicRFHdb51hGOAxmsUIA==}
     dependencies:
       deepmerge: 4.3.1
       escape-string-regexp: 4.0.0
       htmlparser2: 8.0.2
       is-plain-object: 5.0.0
       parse-srcset: 1.0.2
-      postcss: 8.4.35
+      postcss: 8.4.38
     dev: false
 
   /sass-loader@13.3.2(sass@1.69.5)(webpack@5.89.0):
@@ -11854,6 +11873,11 @@ packages:
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /source-map-js@1.2.0:
+    resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
+    engines: {node: '>=0.10.0'}
 
   /source-map-loader@4.0.1(webpack@5.89.0):
     resolution: {integrity: sha512-oqXpzDIByKONVY8g1NUPOTQhe0UTU5bWUl32GSkqK2LjJj0HmwTMVKxcUip0RgAYhY1mqgOxjbQM48a0mmeNfA==}
@@ -12059,7 +12083,7 @@ packages:
       fast-fifo: 1.3.2
       queue-tick: 1.0.1
     optionalDependencies:
-      bare-events: 2.2.0
+      bare-events: 2.2.2
     dev: true
 
   /string-argv@0.3.2:
@@ -12997,7 +13021,7 @@ packages:
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
-      axios: 1.6.2(debug@4.3.4)
+      axios: 1.6.3
       joi: 17.12.1
       lodash: 4.17.21
       minimist: 1.2.8
@@ -13089,8 +13113,8 @@ packages:
       webpack-merge: 5.10.0
     dev: true
 
-  /webpack-dev-middleware@5.3.3(webpack@5.89.0):
-    resolution: {integrity: sha512-hj5CYrY0bZLB+eTO+x/j67Pkrquiy7kWepMHmUMoPsmcUaeEnQJqFzHJOyxgWlq746/wUuA64p9ta34Kyb01pA==}
+  /webpack-dev-middleware@5.3.4(webpack@5.89.0):
+    resolution: {integrity: sha512-BVdTqhhs+0IfoeAf7EoH5WE+exCmqGerHfDM0IL096Px60Tq2Mn9MAbnaGUe6HiMa41KMCYF19gyzZmBcq/o4Q==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
@@ -13146,7 +13170,7 @@ packages:
       spdy: 4.0.2
       webpack: 5.89.0(webpack-cli@5.1.4)
       webpack-cli: 5.1.4(webpack-dev-server@4.15.1)(webpack@5.89.0)
-      webpack-dev-middleware: 5.3.3(webpack@5.89.0)
+      webpack-dev-middleware: 5.3.4(webpack@5.89.0)
       ws: 8.16.0
     transitivePeerDependencies:
       - bufferutil
